@@ -172,7 +172,7 @@ class Tank {
 				this.movingDown(this.containerHeight, this.containerWidth)
 				//Якщо програв, приймамемо рішення продовження гри
 				if (Tank.counterMissingVehicles > Tank.maxToMiss) {
-					this.playAgain = confirm(`Your result ${Tank.counterDestroitVehicles} destroyed enemy vehicles. Do you want to play agan?`)
+					this.playAgain = confirm(`Your result ${Tank.counterDestroitVehicles} destroyed enemy vehicles. Do you want to play again?`)
 					this.playAgain ? this.stop() : this.showResults()
 					Tank.clearInterval()
 					Tank.changeSpeed = 0
